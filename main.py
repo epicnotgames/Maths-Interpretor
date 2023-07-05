@@ -4,7 +4,7 @@ from interpreter import Interpreter
 
 while True:
 	try:
-		text = input("calc > ")
+		text = input("Math-Terpreter >> ")
 		lexer = Lexer(text)
 		tokens = lexer.generate_tokens()
 		parser = Parser(tokens)
