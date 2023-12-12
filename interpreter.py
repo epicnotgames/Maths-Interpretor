@@ -28,3 +28,5 @@ class Interpreter:
             return Number(self.visit(node.node_a).value / self.visit(node.node_b).value)
         except:
             raise Exception("Runtime math error")
+        finally:
+            pass
